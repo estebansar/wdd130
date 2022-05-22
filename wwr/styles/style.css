@@ -62,7 +62,7 @@ nav a:hover {
 }
 .msg {
     background-color: #66cdaa;
-    font-family: "Raleway",Arial, Helvetica, sans-serif;
+    font-family: "Raleway", Helvetica, sans-serif;
     line-height: 1.5em;
     padding: 35px;
 }
@@ -73,7 +73,7 @@ footer {
 }
 .home-title {
     color: black;
-    font-family: "Raleway",Arial, Helvetica, sans-serif;
+    font-family: "Raleway", Helvetica, sans-serif;
     font-size: 2em;
     margin-top: 10px;
 }
