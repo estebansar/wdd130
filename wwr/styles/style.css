@@ -203,8 +203,81 @@ nav {
 }
 .card-img:hover {
     opacity: .6;
-    transform: scale(1.1);
+    transform: scale(1.1);  
 }
+/*Riverspage*/
+
+#rivers-content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.rivers-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Raleway", Helvetica, sans-serif;
+}
+#hero-river-msg h1 {
+    text-align: center;
+}
+#hero-river-msg {
+    grid-column: 1/2; 
+    grid-row: 2/3;
+    margin-top: 100px;
+}
+.river-title {
+    color: white;
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+.idaho-text {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    text-align: justify;
+}
+.idaho-img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+    width: 80%;
+}
+.utah-canyon-text {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    text-align: justify;
+}
+
+.utah-canyon-img {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 80%;
+    align-self: center;   
+}
+
+.arizona-canyon-text {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    text-align: justify;
+}
+
+.arizona-canyon-img {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 80%;
+    align-self: center;
+}
+
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
