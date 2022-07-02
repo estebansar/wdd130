@@ -9,12 +9,23 @@ nav a {
     text-decoration: none;
     padding: 35px;
 }
+#hero-home-msg {
+    grid-column: 1/2; 
+    grid-row: 1/3;
+    margin-top: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color: whitesmoke;
+} 
 #hero-msg h1 {
     text-align: center;
 }
-#hero-msg h4 {
+#hero-home-msg h4 {
     text-align: center;
-    color: white;
+    color: black;
+    font-size: medium;
+
 }
 main section {
     text-align: center;
@@ -34,7 +45,7 @@ body {
 header {
     background-color: #7E998A ;
     display: grid;
-    grid-template-columns: 150px auto;
+    grid-template-columns: 250px auto;
 }
 nav a:hover {
     background-color: #fff8dc ; 
@@ -89,36 +100,18 @@ footer a:hover {
     color: white;
 }
 .logo {
-    width: 80px;
-}
-.icon {
-    width: 80px;
-    padding-top: 10px;
+    width: 100px;
 }
 #hero-img {
     width: 100%;
-}    
-#hero-portfolio-img {
-    width: 100%;
-    height: 80%;
 } 
-#hero-portfolio-msg{
-    grid-column: 1/2; 
-    grid-row: 1/2;
-    margin-top: 100px;
-
-
-}   
-.business-portfolio-title{
-    margin-top: 10px;
-    color: whitesmoke;
-
-}  
 footer h3 a:hover {
     text-decoration: underline;
 }
 h2 {
     margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 #logo_link {
     padding-top: 5px;
@@ -148,15 +141,9 @@ nav {
     grid-row: 1/3;
     z-index: -1;
 }
-#hero-home-msg {
-    grid-column: 1/2; 
-    grid-row: 2/3;
-    margin-top: 100px;
-    background-color: whitesmoke;
-}
 .benefits-grid {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     font-family: "Roboto Mono", Helvetica, sans-serif;
 }
 #hero-home-msg h1 {
@@ -170,23 +157,111 @@ nav {
     margin-top: 10px;
 }
 .benefits-text {
-    grid-column: 1/2;
+    grid-column: 2/3;
     grid-row: 1/2;
+    padding-right: 30px;
+    padding-top: 40px;
+    padding-left: 40px;
+    text-align: left;
+}
+.benefits-text li {
+    text-indent: -1em;
+    text-align: justify;
+    padding-left: 1em;
+    list-style-position: inside;
+    list-style-type: disc;
+    
+}
+.customers-text {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 40px;
+    text-align: justify;
+}
+/* Portofolio*/
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#hero-portfolio-img {
+    width: 100%;
+    height: 80%;
+} 
+#hero-portfolio-msg {
+    grid-column: 1/2; 
+    grid-row: 1/2;
+    margin-top: 100px;
+} 
+.business-portfolio-title {
+    margin-top: 10px;
+    padding-left: 10px;
+    color: whitesmoke;
+    font-weight: normal;
+    text-align: left;
+    font-size: 1.5em;
+
+} 
+.areas-text {
+    margin-top: 5px; 
+    margin-bottom: 50px;
+    grid-column: 1;
+    grid-row: 1;
+}
+.kitchen-text {
+    grid-column: 1/2;
+    grid-row: 2/3;
     padding-right: 30px;
     padding-top: 30px;
     padding-left: 30px;
-    text-align: left;
+    text-align: justify;
 }
-.customer-text {
+.kitchen-img {
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 2/3;
+    align-self: center;
+    width: 80%;
+}
+.living-room-text {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    text-align: justify;  
+}
+.living-room-img {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 80%;
+    align-self: center;
+}  
+.family-room-text {
+    grid-column: 1/2;
+    grid-row: 4/5;
     padding-right: 30px;
     padding-left: 30px;
     padding-top: 30px;
     text-align: justify;
 }
+.family-room-img {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    padding-top: 30px;
+    align-self: center;
+}
 
 /*contactuspage*/
+.business-contactus-title {
+    color: black;
+    font-family: "Roboto Mono", Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+.contactus-text {
+    padding-top: 50px;
+}
 
 form {
     /* Center the form on the page */
@@ -272,7 +347,7 @@ form {
 
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .benefits-grid, .portfolio-grid {
         display: block;
         height: auto;
     }
@@ -286,23 +361,14 @@ form {
     #hero {
         margin-top: 0;
     }
-    #hero-msg {
+    #hero-home-msg, #hero-portfolio-msg {
         margin-top: 0;
     }
     #hero-msg h4 {
         display: none;
     }
-    .home-title {
-        font-size: 25px;
-        color: #6f7364;
-    }
     #background {
         display: none;
-    }
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
     }
     footer {
         margin-top: 25px;
