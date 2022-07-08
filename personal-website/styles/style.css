@@ -133,8 +133,9 @@ nav {
 }
 #hero {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr;
     margin-top: -100px;
+    gap: 10px;
 }
 #hero-box {
     grid-column: 1/4;
@@ -185,19 +186,27 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+#hero-portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: -100px;
+    gap: 10px;
+}
 #hero-portfolio-img {
+    grid-column: 1/5;
     width: 100%;
     height: 80%;
 } 
 #hero-portfolio-msg {
     grid-column: 1/2; 
-    grid-row: 1/2;
+    grid-row: 1/4;
     margin-top: 100px;
+    background-color: whitesmoke;
 } 
 .business-portfolio-title {
     margin-top: 10px;
     padding-left: 10px;
-    color: whitesmoke;
+    color: black;
     font-weight: normal;
     text-align: left;
     font-size: 1.5em;
