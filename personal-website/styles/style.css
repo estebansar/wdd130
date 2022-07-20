@@ -233,6 +233,8 @@ nav {
     grid-column: 2/3;
     grid-row: 2/3;
     align-self: center;
+    padding-left: 40px;
+    padding-bottom: 40px;
     width: 80%;
 }
 .living-room-text {
@@ -247,6 +249,7 @@ nav {
     grid-column: 2/3;
     grid-row: 3/4;
     width: 80%;
+    padding-left: 40px;
     align-self: center;
 }  
 .family-room-text {
@@ -260,7 +263,8 @@ nav {
 .family-room-img {
     grid-column: 2/3;
     grid-row: 4/5;
-    padding-top: 30px;
+    padding-top: 40px;
+    padding-left: 40px;
     align-self: center;
 }
 
@@ -268,14 +272,16 @@ nav {
 .business-contactus-title {
     color: black;
     font-family: "Roboto Mono", Helvetica, sans-serif;
-    font-size: 2em;
+    font-size: 2.5em;
     margin-top: 10px;
 }
 .contactus-text {
-    padding-top: 50px;
+    padding-top: 70px;
 }
 #hero-contactus-msg {
     grid-column: 1/3;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
 }
 form {
